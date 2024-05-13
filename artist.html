@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talent Hub - Artist Dashboard</title>
+    <link rel="stylesheet" href="artist.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>
+          <i class="fas fa-music"></i>Talent<span class="color">Sasa</span>
+        </h1>
+      </div>
+      <nav>
+        <div class="container">
+          <ul></ul>
+        </div>
+      </nav>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+      </div>
+    </header>
+    <main class="container">
+      <h2>Welcome, Artist!</h2>
+      <div class="profile-form">
+        <h3>Update Profile Details</h3>
+        <form action="save_profile.php" method="POST">
+          <div class="input-group">
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required />
+          </div>
+          <div class="input-group">
+            <label for="availability">Availability:</label>
+            <input type="text" id="availability" name="availability" required />
+          </div>
+          <div class="input-group">
+            <label for="charges">Charges:</label>
+            <input
+              type="number"
+              id="charges"
+              name="charges"
+              min="0"
+              step="any"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <button type="submit" class="btn">Update Profile</button>
+          </div>
+        </form>
+      </div>
+      <!--<div class="post-content">
+        <h3>Post Content</h3>
+        <form action="#" method="POST">
+          <div class="input-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="5" required></textarea>
+          </div>
+          <div class="input-group">
+            <button type="submit" class="btn">Post</button>
+          </div>
+        </form>
+      </div>-->
+      <div class="artist-profiles">
+        <div class="profile-card">
+          <h3>John</h3>
+          <p><strong>Genre:</strong> Rock</p>
+          <p><strong>Availability:</strong> Available</p>
+          <p><strong>Charges:</strong> $100/hour</p>
+        </div>
+
+        <div class="profile-card">
+          <h3>Jane</h3>
+          <p><strong>Genre:</strong> Pop</p>
+          <p><strong>Availability:</strong> Booked</p>
+          <p><strong>Charges:</strong> $150/hour</p>
+        </div>
+
+        <div class="profile-card">
+          <h3>Ashley</h3>
+          <p><strong>Genre:</strong> Jazz</p>
+          <p><strong>Availability:</strong> Available</p>
+          <p><strong>Charges:</strong> $120/hour</p>
+        </div>
+
+        <div class="profile-card">
+          <h3>Jaden</h3>
+          <p><strong>Genre:</strong> Hip Hop</p>
+          <p><strong>Availability:</strong> Booked</p>
+          <p><strong>Charges:</strong> $200/hour</p>
+        </div>
+
+        <div class="profile-card">
+          <h3>Ryan</h3>
+          <p><strong>Genre:</strong> Country</p>
+          <p><strong>Availability:</strong> Available</p>
+          <p><strong>Charges:</strong> $90/hour</p>
+        </div>
+
+        <div class="profile-card">
+          <h3>Roxie</h3>
+          <p><strong>Genre:</strong> Electronic</p>
+          <p><strong>Availability:</strong> Booked</p>
+          <p><strong>Charges:</strong> $180/hour</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

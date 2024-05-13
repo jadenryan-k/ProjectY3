@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "Invalid username or password. Please try again.";
     }
 } else {
-    header("Location: login.html");
+    header("Location: index.html");
     exit();
 }
 ?>

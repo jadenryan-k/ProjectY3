@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $db->prepare("INSERT INTO users (username, password, email, role) VALUES (?, ?, ?, ?)");
         $stmt->execute([$username, $hashed_password, $email, $role]);
 
-        header("Location: login.html?signup=success");
+        header("Location: index.html?signup=success");
         exit();
     } catch (PDOException $e) {
         header("Location: signup.html?error=dberror");
